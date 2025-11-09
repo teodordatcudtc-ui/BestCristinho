@@ -9,11 +9,11 @@ export default function Hero() {
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-dark via-primary-darker to-primary-dark">
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/80 z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80)',
+            backgroundImage: 'url(/images/hero.jpg)',
             transform: 'scale(1.1)',
           }}
         />
@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
           >
-            Peste 10 ani de experiență în reparații auto, diagnoză și întreținere.
+            Peste 17 ani de experiență în reparații auto, diagnoză și întreținere.
             Echipa noastră de specialiști vă oferă servicii complete și profesionale.
           </motion.p>
 

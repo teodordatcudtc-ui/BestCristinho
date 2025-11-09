@@ -1,37 +1,37 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Wrench, Gauge, Car, CheckCircle, ArrowRight } from 'lucide-react'
+import { Wrench, Car, Gauge, CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 const services = [
   {
-    icon: Gauge,
-    title: 'Diagnoză Auto',
-    description: 'Diagnosticare completă a mașinii folosind echipamente moderne și tehnologie avansată.',
-    color: 'text-accent-red',
-    slug: 'diagnoza-auto',
-  },
-  {
     icon: Wrench,
-    title: 'Schimb Ulei',
-    description: 'Schimb ulei și filtre cu produse de calitate superioară pentru protecția motorului.',
-    color: 'text-accent-orange',
-    slug: 'schimb-ului-si-filtre',
+    title: 'Mecanică Ușoară și Întreținere',
+    description: 'Servicii complete de întreținere și reparații ușoare. Preț: 200 lei/oră + TVA.',
+    color: 'text-accent-red',
+    slug: 'mecanica-usoara-intretinere',
   },
   {
     icon: Car,
-    title: 'Reparații Mecanice',
-    description: 'Reparații complete pentru toate sistemele mașinii: motor, transmisie, suspensie.',
+    title: 'Reparații Motoare',
+    description: 'Reparații complete pentru motoare, de la lucrări standard la reparații complexe.',
+    color: 'text-accent-orange',
+    slug: 'reparatii-motoare',
+  },
+  {
+    icon: Gauge,
+    title: 'Sistem Electric și Electronic',
+    description: 'Diagnosticare și reparații pentru toate sistemele electrice și electronice.',
     color: 'text-accent-red',
-    slug: 'reparatii-mecanice',
+    slug: 'sistem-electric-electronic',
   },
   {
     icon: CheckCircle,
-    title: 'Verificări Tehnice',
-    description: 'Verificări tehnice periodice și ITP pentru siguranța și conformitatea vehiculului.',
+    title: 'Tinichigerie și Vopsitorie',
+    description: 'Reparație caroserie, vopsire și restaurări estetice pentru aspectul original.',
     color: 'text-accent-orange',
-    slug: 'verificari-tehnice',
+    slug: 'tinichigerie-vopsitorie',
   },
 ]
 

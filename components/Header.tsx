@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Phone } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -9,6 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [logoError, setLogoError] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -34,14 +36,31 @@ export default function Header() {
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              className="flex items-center"
             >
-              <h1 className="text-2xl font-bold text-white">
-                <span className="text-accent-red">Best</span> Cristinho
-              </h1>
+              {/* Logo */}
+              {!logoError ? (
+                <div className="relative w-16 h-16 md:w-24 md:h-24 flex-shrink-0">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Best Cristinho Logo"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 64px, 96px"
+                    priority
+                    onError={() => setLogoError(true)}
+                  />
+                </div>
+              ) : (
+                /* Fallback text doar dacă logo-ul nu există */
+                <h1 className="text-xl md:text-2xl font-bold text-white">
+                  <span className="text-accent-red">Best</span> Cristinho
+                </h1>
+              )}
             </motion.div>
           </Link>
 

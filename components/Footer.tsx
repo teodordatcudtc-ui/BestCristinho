@@ -37,7 +37,7 @@ export default function Footer() {
               <span className="text-accent-red">Best</span> Cristinho
             </h3>
             <p className="text-gray-400 mb-4">
-              Service auto profesional în Pitești, oferind servicii complete de reparații și întreținere auto de peste 10 ani.
+              Service auto profesional în Pitești, oferind servicii complete de reparații și întreținere auto de peste 17 ani.
             </p>
             <div className="flex space-x-4">
               <motion.a

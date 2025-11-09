@@ -12,7 +12,7 @@ const values = [
   {
     icon: Users,
     title: 'Echipă Experiențată',
-    description: 'Mecanici cu peste 10 ani de experiență în domeniul auto, certificați și dedicați.',
+    description: 'Mecanici cu peste 17 ani de experiență în domeniul auto, certificați și dedicați.',
   },
   {
     icon: Target,
@@ -63,8 +63,8 @@ export default function DespreNoi() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                 <p>
-                  Service Auto Best Cristinho a fost înființat cu pasiune pentru automobile și
-                  dedicare față de clienți. De peste 10 ani, oferim servicii complete de reparații
+                  Service Auto Best Cristinho a fost înființat în 2008 cu pasiune pentru automobile și
+                  dedicare față de clienți. De peste 17 ani, oferim servicii complete de reparații
                   și întreținere auto în Pitești și împrejurimi.
                 </p>
                 <p>

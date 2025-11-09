@@ -102,8 +102,24 @@ export default function Contact() {
                 </h3>
                 <div className="space-y-2 text-gray-600">
                   <p className="flex justify-between">
-                    <span>Luni - Vineri:</span>
-                    <span className="font-medium">08:00 - 18:00</span>
+                    <span>Luni:</span>
+                    <span className="font-medium">09:00 - 18:00</span>
+                  </p>
+                  <p className="flex justify-between">
+                    <span>Marți:</span>
+                    <span className="font-medium">09:00 - 18:00</span>
+                  </p>
+                  <p className="flex justify-between">
+                    <span>Miercuri:</span>
+                    <span className="font-medium">09:00 - 18:00</span>
+                  </p>
+                  <p className="flex justify-between">
+                    <span>Joi:</span>
+                    <span className="font-medium">09:00 - 18:00</span>
+                  </p>
+                  <p className="flex justify-between">
+                    <span>Vineri:</span>
+                    <span className="font-medium">09:00 - 18:00</span>
                   </p>
                   <p className="flex justify-between">
                     <span>Sâmbătă:</span>
